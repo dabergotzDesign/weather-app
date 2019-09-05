@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Delius+Unicase&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>What's the Weather?</h1>
+      <label class="switch">
+        <input type="checkbox" class="toggle" />
+        <span class="slider round"></span>
+      </label>
+      <!-- <div class="inputField">
+        <input type="text" placeholder="Enter your city..." id="name" />
+      </div> -->
+
+      <section class="app">
+        <!-- ICON, TEMPERATURE,LOCATION -->
+
+        <div class="weather">
+          <canvas class="icon" width="156" height="156"></canvas>
+          <div class="temperature"></div>
+          <span>°F</span>
+          <div class="location">City</div>
+        </div>
+
+        <!-- DATE & MORE INFO -->
+
+        <div class="dateInfo">
+          <div class="wind">
+            <div>Wind: <span>0.00</span> mph</div>
+            <div class="humidity">Humidity: <span> </span> %</div>
+          </div>
+          <div>
+            <div class="date"></div>
+            <div class="writtenWeather">Overcast Clouds</div>
+          </div>
+        </div>
+
+        <!-- FORECAST -->
+
+        <div class="weatherForecast">
+          <table>
+            <tr>
+              <th></th>
+              <th class="day1">day1</th>
+              <th class="day2">day2</th>
+              <th class="day3">day3</th>
+              <th class="day4">day4</th>
+              <th class="day5">day5</th>
+            </tr>
+            <tr>
+              <th>Min</th>
+              <td class="minDay1">00°</td>
+              <td class="minDay2">00°</td>
+              <td class="minDay3">00°</td>
+              <td class="minDay4">00°</td>
+              <td class="minDay5">00°</td>
+            </tr>
+            <tr>
+              <th>Max</th>
+              <td class="maxDay1">00°</td>
+              <td class="maxDay2">00°</td>
+              <td class="maxDay3">00°</td>
+              <td class="maxDay4">00°</td>
+              <td class="maxDay5">00°</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="skycons.js"></script>
+  <script src="app.js"></script>
+</html>
